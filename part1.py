@@ -11,7 +11,7 @@ np.random.seed(42)
 
 os.remove('part1.log') if os.path.exists('part1.log') else None
 
-formatter = logging.Formatter('%(name)s  %(asctime)s - %(message)s')
+formatter = logging.Formatter('%(name)s - %(message)s')
 
 logger = logging.getLogger("part1")
 logger.setLevel(logging.DEBUG)
@@ -27,7 +27,7 @@ logger.addHandler(file_handler)
 
 class MyLinearRegression:
     def __init__(self, weights_init='random', add_bias=True, learning_rate=1e-4,
-        num_iterations=150_000, max_error=1e-6, verbose=True, num_messages=100):
+        num_iterations=150_000, max_error=1e-6, verbose=True, num_messages=50):
         ''' Linear regression model using gradient descent 
 
         # Arguments
@@ -136,6 +136,7 @@ if __name__ == "__main__":
     plt.title('Data samples')
     plt.scatter(x, y)
     plt.savefig('imgs/data_samples.png')
+    plt.close()
 
     # Sklearn linear regression model
     sklearn_model = LinearRegression()
@@ -146,6 +147,7 @@ if __name__ == "__main__":
     plt.scatter(x, y)
     plt.plot(x, y_hat_sklearn, color='r')
     plt.savefig('imgs/sklearn_model.png')
+    plt.close()
     logger.info(f'Sklearn MSE: {mean_squared_error(y, y_hat_sklearn)}')
 
     # Your linear regression model
@@ -157,15 +159,28 @@ if __name__ == "__main__":
     plt.scatter(x, y)
     plt.plot(x, y_hat, color='r')
     plt.savefig('imgs/my_model.png')
+    plt.close()
     logger.info(f'My MSE: {mean_squared_error(y, y_hat)}')
 
-    # Normal equation
-    x_biased = np.hstack((np.ones((x.shape[0], 1)), x))
-    weights = normal_equation(x_biased, y)
-    y_hat_normal = x_biased @ weights
+    # Normal equation without bias
+    weights = normal_equation(x, y)
+    y_hat_normal = x @ weights
 
-    plt.title('Data samples with normal equation')
+    plt.title('Data samples with normal equation (without bias)')
     plt.scatter(x, y)
     plt.plot(x, y_hat_normal, color='r')
-    plt.savefig('imgs/normal_equation.png')
-    logger.info(f'Normal equation MSE: {mean_squared_error(y, y_hat_normal)}')
+    plt.savefig('imgs/normal_equation_without_bias.png')
+    plt.close()
+    logger.info(f'Normal equation without bias MSE: {mean_squared_error(y, y_hat_normal)}')
+
+    # Normal equation with bias
+    x_biased = np.hstack((np.ones((x.shape[0], 1)), x))
+    weights = normal_equation(x_biased, y)
+    y_hat_normal_with_bias = x_biased @ weights
+
+    plt.title('Data samples with normal equation (with bias)')
+    plt.scatter(x, y)
+    plt.plot(x, y_hat_normal_with_bias, color='r')
+    plt.savefig('imgs/normal_equation_with_bias.png')
+    plt.close()
+    logger.info(f'Normal equation with bias MSE: {mean_squared_error(y, y_hat_normal_with_bias)}')
