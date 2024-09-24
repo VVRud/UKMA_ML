@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
+np.random.seed(42)
+
 os.remove('part1.log') if os.path.exists('part1.log') else None
 
 formatter = logging.Formatter('%(name)s  %(asctime)s - %(message)s')
@@ -25,7 +27,7 @@ logger.addHandler(file_handler)
 
 class MyLinearRegression:
     def __init__(self, weights_init='random', add_bias=True, learning_rate=1e-4,
-        num_iterations=1_000_000, max_error=1e-6, verbose=True, num_messages=100):
+        num_iterations=150_000, max_error=1e-6, verbose=True, num_messages=100):
         ''' Linear regression model using gradient descent 
 
         # Arguments
