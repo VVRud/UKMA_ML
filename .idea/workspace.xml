@@ -1,18 +1,342 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="786662c4-910a-47a0-93e3-9d6680640454" name="Changes" comment="" />
+    <list default="true" id="786662c4-910a-47a0-93e3-9d6680640454" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/linear_regression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic_regression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vectorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1011572216.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1011572216.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/101654506.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/101654506.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1019077836.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1019077836.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1019604187.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1019604187.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1056873310.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1056873310.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1082379191.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1082379191.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1083240835.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1083240835.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1089181217.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1089181217.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1094462889.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1094462889.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1096097967.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1096097967.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/114941694.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/114941694.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1163297375.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1163297375.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1174525839.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1174525839.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1247484195.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1247484195.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1287982439.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1287982439.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1363843090.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1363843090.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/136399365.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/136399365.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1377428277.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1377428277.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1402859872.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1402859872.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/140377584.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/140377584.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1429546659.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1429546659.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1469138762.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1469138762.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1505686764.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1505686764.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1508269285.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1508269285.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1512967800.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1512967800.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1525153022.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1525153022.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1526325728.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1526325728.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/15875060.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/15875060.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1663751778.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1663751778.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1689991150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1689991150.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/171822522.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/171822522.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/181172072.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/181172072.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/181777261.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/181777261.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1855985590.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1855985590.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1918573100.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1918573100.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1921398767.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1921398767.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/1932161768.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/1932161768.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2029546318.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2029546318.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2067833088.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2067833088.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2094323311.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2094323311.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2112921744.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2112921744.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2125454445.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2125454445.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2135502491.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2135502491.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/213609234.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/213609234.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/214597976.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/214597976.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2176364472.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2176364472.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2187503678.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2187503678.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2190137367.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2190137367.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2228381169.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2228381169.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2232822316.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2232822316.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2234018985.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2234018985.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2240539658.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2240539658.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2245989501.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2245989501.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2257099774.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2257099774.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2295447147.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2295447147.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/231439338.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/231439338.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2331827016.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2331827016.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2337578794.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2337578794.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2347251375.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2347251375.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2354914661.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2354914661.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2385079235.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2385079235.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2403544744.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2403544744.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2433178831.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2433178831.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2445283938.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2445283938.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2446842020.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2446842020.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2450486758.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2450486758.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2463067409.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2463067409.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2497608431.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2497608431.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2518508760.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2518508760.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2536434720.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2536434720.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2554586230.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2554586230.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2557059247.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2557059247.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2561751298.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2561751298.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2562463210.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2562463210.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2580883993.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2580883993.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2583001715.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2583001715.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2583217692.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2583217692.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/260850192.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/260850192.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2632366677.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2632366677.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/263491786.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/263491786.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2658009523.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2658009523.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2663272259.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2663272259.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2677614492.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2677614492.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/269898428.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/269898428.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2699426519.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2699426519.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2701603045.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2701603045.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2720215226.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2720215226.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2736263527.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2736263527.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2746839158.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2746839158.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2749807618.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2749807618.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2768021570.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2768021570.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2775461796.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2775461796.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/279230262.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/279230262.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2831313661.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2831313661.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2844641033.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2844641033.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2847633529.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2847633529.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2849169944.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2849169944.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2853205396.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2853205396.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2853451727.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2853451727.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2867736861.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2867736861.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2874984466.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2874984466.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2896483502.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2896483502.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/290019324.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/290019324.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2936693681.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2936693681.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2939116460.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2939116460.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2943772984.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2943772984.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2970450682.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2970450682.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/2982928615.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/2982928615.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/300539993.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/300539993.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/301608837.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/301608837.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3043908909.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3043908909.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3048461682.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3048461682.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3051600747.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3051600747.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3064716525.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3064716525.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3088572348.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3088572348.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3098707588.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3098707588.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/311267421.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/311267421.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/311380477.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/311380477.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3139287876.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3139287876.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3195701071.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3195701071.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3205010608.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3205010608.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3208725027.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3208725027.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3228793611.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3228793611.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3239260246.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3239260246.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3249278583.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3249278583.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3265864834.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3265864834.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3283626303.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3283626303.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3284887033.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3284887033.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3296715418.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3296715418.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3322443827.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3322443827.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3338082262.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3338082262.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3344531479.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3344531479.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3360178782.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3360178782.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3361630301.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3361630301.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3377344932.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3377344932.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3381746410.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3381746410.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3393394134.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3393394134.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3397220683.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3397220683.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3402638444.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3402638444.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3407317539.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3407317539.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/34176632.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/34176632.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3419634480.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3419634480.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3435208408.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3435208408.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3437034427.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3437034427.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3449718979.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3449718979.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3454092588.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3454092588.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3465353601.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3465353601.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3472485022.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3472485022.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3473742715.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3473742715.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3474330484.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3474330484.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3480126681.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3480126681.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3519483468.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3519483468.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3519815055.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3519815055.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3523474077.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3523474077.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/35400054.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/35400054.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3551170666.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3551170666.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3557148230.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3557148230.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/356929855.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/356929855.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3595643050.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3595643050.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3611694228.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3611694228.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3614269018.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3614269018.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3623650392.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3623650392.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3624076529.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3624076529.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3640020134.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3640020134.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3647750811.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3647750811.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3662909101.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3662909101.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3668244651.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3668244651.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3691592651.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3691592651.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3704431444.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3704431444.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3711611500.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3711611500.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/373394550.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/373394550.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3816820298.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3816820298.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3817024841.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3817024841.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/385186343.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/385186343.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3862675867.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3862675867.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3909552008.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3909552008.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3920626767.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3920626767.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/393987665.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/393987665.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/396179143.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/396179143.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/3971425242.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/3971425242.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4031301793.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4031301793.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4035527590.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4035527590.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4049278176.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4049278176.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4062550863.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4062550863.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/424416723.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/424416723.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/426191845.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/426191845.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/429497076.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/429497076.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4296373889.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4296373889.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/431664339.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/431664339.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/432248727.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/432248727.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/432490118.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/432490118.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4360988503.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4360988503.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/447357501.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/447357501.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/448493587.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/448493587.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4512128247.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4512128247.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4517839686.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4517839686.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/453473508.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/453473508.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/453756106.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/453756106.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4548082171.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4548082171.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4554488264.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4554488264.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4567351269.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4567351269.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/458735196.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/458735196.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4591294546.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4591294546.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4603097016.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4603097016.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4604364861.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4604364861.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/460478198.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/460478198.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4609788189.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4609788189.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4622064391.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4622064391.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/463246331.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/463246331.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4647056741.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4647056741.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4649735839.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4649735839.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4656684238.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4656684238.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4688301633.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4688301633.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/468911753.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/468911753.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4705826062.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4705826062.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/470903027.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/470903027.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4718118294.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4718118294.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4718950442.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4718950442.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4725480987.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4725480987.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4758584005.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4758584005.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4761370497.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4761370497.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4762649269.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4762649269.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4764102456.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4764102456.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4764975754.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4764975754.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4769459188.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4769459188.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4771783770.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4771783770.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4787655421.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4787655421.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4809690215.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4809690215.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4811949932.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4811949932.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/482642539.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/482642539.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4827151208.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4827151208.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4855357158.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4855357158.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4865304495.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4865304495.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4867540330.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4867540330.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4872454115.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4872454115.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4876860378.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4876860378.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/487894806.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/487894806.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4883101538.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4883101538.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4888309413.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4888309413.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4906687225.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4906687225.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4923601195.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4923601195.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4930796789.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4930796789.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4934467462.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4934467462.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/49416802.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/49416802.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4967237527.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4967237527.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4969460165.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4969460165.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4971194812.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4971194812.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/4980391949.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/4980391949.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/511282305.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/511282305.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/511749704.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/511749704.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/514222303.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/514222303.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/518230621.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/518230621.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/519259595.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/519259595.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/522652105.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/522652105.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/522700240.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/522700240.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/524282699.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/524282699.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/524787268.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/524787268.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/531261613.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/531261613.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/5319228272.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/5319228272.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/536721406.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/536721406.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/5371586024.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/5371586024.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/537532165.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/537532165.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/5440115287.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/5440115287.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/5479752383.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/5479752383.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/5508398736.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/5508398736.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/557601144.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/557601144.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/5739332706.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/5739332706.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/5744253993.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/5744253993.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/5822447877.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/5822447877.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/5902806140.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/5902806140.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/6192034820.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/6192034820.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/6517810397.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/6517810397.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/652542470.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/652542470.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/6745586595.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/6745586595.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/6802728196.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/6802728196.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/6953343058.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/6953343058.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/717673249.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/717673249.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/7253781238.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/7253781238.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/7381226538.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/7381226538.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/7430272380.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/7430272380.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/746787916.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/746787916.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/7519792774.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/7519792774.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/756004341.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/756004341.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/7700027818.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/7700027818.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/7702108102.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/7702108102.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/783353797.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/783353797.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/79737352.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/79737352.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/81125088.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/81125088.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/855430954.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/855430954.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/861661418.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/861661418.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/865789346.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/865789346.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/87761964.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/87761964.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/flickr30k_images/963730324.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/images/963730324.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/labels.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/data_samples.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/my_model.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/normal_equation_with_bias.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/normal_equation_without_bias.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/sklearn_model.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2mVXOtoazTKdnSONHRCM8PtnDRs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -21,14 +345,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.part1.executor": "Run",
+    "Python.part2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/media/vvrud/New Volume/UNY/ML/lab1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="DjangoTestsConfigurationType">
+  <component name="RunManager" selected="Python.part2">
+    <configuration name="part1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -37,47 +368,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="lab1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="lab1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,109 +382,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Python.FlaskServer">
+    <configuration name="part2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="lab1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="lab1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="lab1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Autodetect">
-      <module name="lab1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="lab1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.part2" />
+        <item itemvalue="Python.part1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.22855.92" />
-        <option value="bundled-python-sdk-b068d85d1acf-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.22855.92" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23339.19" />
+        <option value="bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19" />
       </set>
     </attachedChunks>
   </component>
@@ -201,7 +429,15 @@
       <option name="presentableId" value="Default" />
       <updated>1727162689088</updated>
       <workItem from="1727162708159" duration="3000" />
+      <workItem from="1727608080914" duration="13629000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lab1$part2.coverage" NAME="part2 Coverage Results" MODIFIED="1727622260985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab1$part1.coverage" NAME="part1 Coverage Results" MODIFIED="1727622138537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

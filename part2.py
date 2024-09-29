@@ -1,83 +1,148 @@
+import os
+from pathlib import Path
+
 import click
 import numpy as np
-from sklearn.metrics import accuracy_score
+import pandas as pd
+from PIL import Image
+from sklearn.metrics import accuracy_score, f1_score
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix
+
+from logger import get_logger
+from models import create_model
+from predictors import voting_predictor
+from validators import create_validator
+from vectorization import vectorize_images
+
+
+base_path = Path('logs') / 'part2'
+imgs_dir = base_path / 'imgs'
+imgs_dir.mkdir(parents=True, exist_ok=True)
+logger = get_logger("part2", base_path)
 
 
 def load_data(image_folder: str, label_file: str):
     ''' Loads images and labels from the specified folder and file.'''
     # load labels file
-    labels = None 
+    logger.debug("Loading data...")
+    labels = pd.read_csv(label_file, delimiter="|", usecols=["image_name", "label"])
+    labels["label"] = (labels["label"] == "animal").astype(np.int32)
+    labels = labels.sort_values(by="image_name").reset_index(drop=True)
+    image_names = labels["image_name"].tolist()
+    labels = labels["label"].to_numpy()
 
     # load corresponding images
-    images = None 
+    images = []
+    for image_name in image_names:
+        image_file = Image.open(os.path.join(image_folder, image_name))
+        if image_file.mode != "RGB":
+            image_file = image_file.convert("RGB")
+        images.append(image_file)
 
     return images, labels
 
 
-def vectorize_images(images: np.ndarray):
-    ''' Vectorizes images into a matrix of size (N, D), where N is the number of images, and D is the dimensionality of the image.'''
-    X = None
-    return X
-
-
-def validation_split(X: np.ndarray, y: np.ndarray):
+def validation_split(X: np.ndarray, y: np.ndarray, test_size: float):
     ''' Splits data into train and test.'''
-    X_train = None
-    X_test = None
-    y_train = None
-    y_test = None
-    return X_train, X_test, y_train, y_test
+    return train_test_split(X, y, np.arange(X.shape[0]), test_size=test_size)
 
 
-def create_model(model_name: str):
-    ''' Creates a model of the specified name. 
-    1. Use your LinearRegression implementation,
-    2. TODO
-    3. 
-    Args:
-        model_name (str): Name of the model to use.
-    Returns:
-        model (object): Model of the specified name.
-    '''
-    model = None
-    return model
+def print_metrics(y_true, y_pred):
+    ''' Prints accuracy and F1 score.'''
+    accuracy = accuracy_score(y_true, y_pred)
+    logger.debug(f"Accuracy: {accuracy:.2f}")
+    f1 = f1_score(y_true, y_pred)
+    logger.debug(f"F1: {f1:.2f}")
 
 
 @click.command()
 @click.option("--image_folder", type=str, help="Path to the folder containing images")
 @click.option("--label_file", type=str, help="Path to the file containing labels")
+@click.option("--embeddings_type", type=str, help="Features generator name")
 @click.option("--model_name", type=str, help="Name of the model to use")
+@click.option("--validator_name", type=str, help="Name of the validator to use")
+@click.option("--voting_method", type=str, help="Method of the voting to use")
 @click.option("--test_size", type=float, default=0.2, help="Size of the test split")
-def main(image_folder: str, label_file: str, model_name: str, test_size: float):
+def main(image_folder: str, label_file: str, embeddings_type: str, model_name: str, validator_name:str, voting_method: str, test_size: float):
+    image_folder = "dataset/images"
+    label_file = "dataset/labels.csv"
+    embeddings_type = "google/vit-base-patch16-224"
+    model_name = "logistic_regression_sklearn"
+    validator_name = "stratified_k_fold"
+    voting_method = "soft"
+    test_size = 0.2
 
-    # Create dataset of image <-> label pairs
     images, labels = load_data(image_folder, label_file)
 
-    # preprocess images and labels
-    X = vectorize_images(images)
-    y = None 
+    X = vectorize_images(logger, images, embeddings_type)
+    y = labels
 
-    # split data into train and test
-    X_train, X_test, y_train, y_test = validation_split(X, y, test_size)
+    X_train, X_test, y_train, y_test, train_idx, test_idx = validation_split(X, y, test_size)
 
-    # create model
-    model = create_model(model_name)
+    validator = create_validator(validator_name)
 
-    # Train model using different validation strategies (refere to https://scikit-learn.org/stable/modules/cross_validation.html)
-    # 1. Train, validation, test splits: so you need to split train into train and validation 
-    # 2. K-fold cross-validation: apply K-fold cross-validation on train data
-    # 3. Leave-one-out cross-validation: apply Leave-one-out cross-validation on train data
+    logger.debug("=" * 50)
+    logger.debug("Training models...")
+    result_models = []
+    for i, (val_train_idx, val_test_idx) in enumerate(validator(X_train, y_train)):
+        logger.debug("*" * 25)
+        logger.debug(f"Fold {i + 1}")
+        X_val_train_split, y_val_train_split, X_val_test, y_val_test = (
+            X_train[val_train_idx], y_train[val_train_idx], X_train[val_test_idx], y_train[val_test_idx]
+        )
 
-    # Make a prediction on test data
-    y_pred = model.predict(X_test) # in the simpliest validation strategy, in K-fold you will have multiple predictions
+        model = create_model(model_name)
+        model.fit(X_val_train_split, y_val_train_split)
+        result_models.append(model)
+        y_pred_val = model.predict(X_val_test)
+        print_metrics(y_val_test, y_pred_val)
 
-    # Calculate accuracy
-    accuracy = accuracy_score(y_test, y_pred)
-    print(f"Accuracy: {accuracy:.2f}")
+    if len(result_models) == 0:
+        raise ValueError("No model was trained.")
+    if len(result_models) == 1:
+        y_pred = result_models[0].predict(X_test)
+    else:
+        y_pred = voting_predictor(result_models, X_test, method=voting_method)
 
-    # Make error analysis
+    logger.debug("=" * 50)
+    logger.debug("Final results:")
+    print_metrics(y_test, y_pred)
+
     # 1. Plot the first 10 test images, and on each image plot the corresponding prediction
+    candidates = np.where(y_pred != y_test)[0][:10]
+    fig, axes = plt.subplots(2, 5, figsize=(15, 6))
+    for i, ax in enumerate(axes.flatten()):
+        if len(candidates) <= i:
+            break
+        candidate_idx = candidates[i]
+        original_image = images[test_idx[candidate_idx]]
+        filename = os.path.basename(original_image.filename)
+        curr_image = original_image.resize((224, 224))
+        ax.imshow(curr_image)
+        ax.set_title(f"IMG {filename}\nTrue: {y_test[candidate_idx]}, Pred: {y_pred[candidate_idx]}")
+        ax.axis('off')
+    plt.tight_layout()
+    plt.savefig(imgs_dir / "errors.png")
+    plt.show()
+
     # 2. Plot the confusion matrix
+    cm = confusion_matrix(y_test, y_pred)
+    plt.figure(figsize=(8,8))
+    plt.matshow(cm, interpolation='nearest', cmap=plt.get_cmap('Blues'))
+    for (i, j), z in np.ndenumerate(cm):
+        plt.text(j, i, f'{z}', ha='center', va='center', bbox=dict(boxstyle='round', facecolor='white', edgecolor='0.3'))
+
+    tick_marks = [0, 1]
+    labels = ["human", "animal"]
+    plt.title('Confusion Matrix')
+    plt.ylabel('True label')
+    plt.yticks(tick_marks, labels, rotation=90)
+    plt.xlabel('Predicted label')
+    plt.xticks(tick_marks, labels)
+    plt.savefig(imgs_dir / "confusion_matrix.png")
+    plt.show()
 
 
 
