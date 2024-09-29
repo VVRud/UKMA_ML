@@ -1,0 +1,178 @@
+linear_regression - Iteration 0
+linear_regression - Iteration 0, loss: 7599.9702456138
+linear_regression - Iteration 1000, loss: 6573.815530865714
+linear_regression - Iteration 1500
+linear_regression - Iteration 2000, loss: 5703.508331024031
+linear_regression - Iteration 3000
+linear_regression - Iteration 3000, loss: 4960.874466697607
+linear_regression - Iteration 4000, loss: 4324.075322211428
+linear_regression - Iteration 4500
+linear_regression - Iteration 5000, loss: 3775.8965186991422
+linear_regression - Iteration 6000
+linear_regression - Iteration 6000, loss: 3302.5552827965735
+linear_regression - Iteration 7000, loss: 2892.843094615769
+linear_regression - Iteration 7500
+linear_regression - Iteration 8000, loss: 2537.537877516916
+linear_regression - Iteration 9000
+linear_regression - Iteration 9000, loss: 2228.9629439482737
+linear_regression - Iteration 10000, loss: 1960.6664769459876
+linear_regression - Iteration 10500
+linear_regression - Iteration 11000, loss: 1727.185744728184
+linear_regression - Iteration 12000
+linear_regression - Iteration 12000, loss: 1523.8628936698788
+linear_regression - Iteration 13000, loss: 1346.7107906712417
+linear_regression - Iteration 13500
+linear_regression - Iteration 14000, loss: 1192.299028925009
+linear_regression - Iteration 15000
+linear_regression - Iteration 15000, loss: 1057.6660326100712
+linear_regression - Iteration 16000, loss: 940.2485294637183
+linear_regression - Iteration 16500
+linear_regression - Iteration 17000, loss: 837.8288899048812
+linear_regression - Iteration 18000
+linear_regression - Iteration 18000, loss: 748.4768385579995
+linear_regression - Iteration 19000, loss: 670.517267609898
+linear_regression - Iteration 19500
+linear_regression - Iteration 20000, loss: 602.4923798095828
+linear_regression - Iteration 21000
+linear_regression - Iteration 21000, loss: 543.1309457701573
+linear_regression - Iteration 22000, loss: 491.32902617787744
+linear_regression - Iteration 22500
+linear_regression - Iteration 23000, loss: 446.1207193589981
+linear_regression - Iteration 24000
+linear_regression - Iteration 24000, loss: 406.6656104841976
+linear_regression - Iteration 25000, loss: 372.23245856397097
+linear_regression - Iteration 25500
+linear_regression - Iteration 26000, loss: 342.17845476593067
+linear_regression - Iteration 27000
+linear_regression - Iteration 27000, loss: 315.94993969478423
+linear_regression - Iteration 28000, loss: 293.05675482278855
+linear_regression - Iteration 28500
+linear_regression - Iteration 29000, loss: 273.0767790932957
+linear_regression - Iteration 30000
+linear_regression - Iteration 30000, loss: 255.6374303300097
+linear_regression - Iteration 31000, loss: 240.4166945688355
+linear_regression - Iteration 31500
+linear_regression - Iteration 32000, loss: 227.13206069495985
+linear_regression - Iteration 33000
+linear_regression - Iteration 33000, loss: 215.53643484837062
+linear_regression - Iteration 34000, loss: 205.4169467067651
+linear_regression - Iteration 34500
+linear_regression - Iteration 35000, loss: 196.58117865049488
+linear_regression - Iteration 36000
+linear_regression - Iteration 36000, loss: 188.87293886727053
+linear_regression - Iteration 37000, loss: 182.14653763775664
+linear_regression - Iteration 37500
+linear_regression - Iteration 38000, loss: 176.2695013357013
+linear_regression - Iteration 39000
+linear_regression - Iteration 39000, loss: 171.14523813517496
+linear_regression - Iteration 40000, loss: 166.67075564459483
+linear_regression - Iteration 40500
+linear_regression - Iteration 41000, loss: 162.7645372978782
+linear_regression - Iteration 42000
+linear_regression - Iteration 42000, loss: 159.35914280976579
+linear_regression - Iteration 43000, loss: 156.38054871399902
+linear_regression - Iteration 43500
+linear_regression - Iteration 44000, loss: 153.78650124652856
+linear_regression - Iteration 45000
+linear_regression - Iteration 45000, loss: 151.52100398457412
+linear_regression - Iteration 46000, loss: 149.54283888548724
+linear_regression - Iteration 46500
+linear_regression - Iteration 47000, loss: 147.81513839660545
+linear_regression - Iteration 48000
+linear_regression - Iteration 48000, loss: 146.30681265096638
+linear_regression - Iteration 49000, loss: 144.99457314737384
+linear_regression - Iteration 49500
+linear_regression - Iteration 50000, loss: 143.84309612407873
+linear_regression - Iteration 51000
+linear_regression - Iteration 51000, loss: 142.84456821910175
+linear_regression - Iteration 52000, loss: 141.96871679317996
+linear_regression - Iteration 52500
+linear_regression - Iteration 53000, loss: 141.2025780324694
+linear_regression - Iteration 54000
+linear_regression - Iteration 54000, loss: 140.53851465978306
+linear_regression - Iteration 55000, loss: 139.9578010217271
+linear_regression - Iteration 55500
+linear_regression - Iteration 56000, loss: 139.45030803590495
+linear_regression - Iteration 57000
+linear_regression - Iteration 57000, loss: 139.00668101596915
+linear_regression - Iteration 58000, loss: 138.6183753717173
+linear_regression - Iteration 58500
+linear_regression - Iteration 59000, loss: 138.28194504630207
+linear_regression - Iteration 60000
+linear_regression - Iteration 60000, loss: 137.9894283883092
+linear_regression - Iteration 61000, loss: 137.7323205135414
+linear_regression - Iteration 61500
+linear_regression - Iteration 62000, loss: 137.50432752326964
+linear_regression - Iteration 63000
+linear_regression - Iteration 63000, loss: 137.3120558295749
+linear_regression - Iteration 64000, loss: 137.14023678700283
+linear_regression - Iteration 64500
+linear_regression - Iteration 65000, loss: 136.99099681068205
+linear_regression - Iteration 66000
+linear_regression - Iteration 66000, loss: 136.86126541958419
+linear_regression - Iteration 67000, loss: 136.7472435486045
+linear_regression - Iteration 67500
+linear_regression - Iteration 68000, loss: 136.64769649321056
+linear_regression - Iteration 69000
+linear_regression - Iteration 69000, loss: 136.56235515011488
+linear_regression - Iteration 70000, loss: 136.4828042224544
+linear_regression - Iteration 70500
+linear_regression - Iteration 71000, loss: 136.4207863753807
+linear_regression - Iteration 72000
+linear_regression - Iteration 72000, loss: 136.362727433219
+linear_regression - Iteration 73000, loss: 136.30932616722663
+linear_regression - Iteration 73500
+linear_regression - Iteration 74000, loss: 136.26885410948046
+linear_regression - Iteration 75000
+linear_regression - Iteration 75000, loss: 136.23091575086835
+linear_regression - Iteration 76000, loss: 136.1955110913876
+linear_regression - Iteration 76500
+linear_regression - Iteration 77000, loss: 136.1657415376918
+linear_regression - Iteration 78000
+linear_regression - Iteration 78000, loss: 136.14256530566283
+linear_regression - Iteration 79000, loss: 136.1208142793938
+linear_regression - Iteration 79500
+linear_regression - Iteration 80000, loss: 136.10048845888403
+linear_regression - Iteration 81000
+linear_regression - Iteration 81000, loss: 136.08158784413317
+linear_regression - Iteration 82000, loss: 136.06686937080048
+linear_regression - Iteration 82500
+linear_regression - Iteration 83000, loss: 136.05585569004427
+linear_regression - Iteration 84000
+linear_regression - Iteration 84000, loss: 136.04547543406971
+linear_regression - Iteration 85000, loss: 136.0357286028767
+linear_regression - Iteration 85500
+linear_regression - Iteration 86000, loss: 136.02661519646514
+linear_regression - Iteration 87000
+linear_regression - Iteration 87000, loss: 136.0181352148351
+linear_regression - Iteration 88000, loss: 136.01028865798642
+linear_regression - Iteration 88500
+linear_regression - Iteration 89000, loss: 136.00355635688675
+linear_regression - Iteration 90000
+linear_regression - Iteration 90000, loss: 136.000165313635
+linear_regression - Iteration 91000, loss: 135.9969326265786
+linear_regression - Iteration 91500
+linear_regression - Iteration 92000, loss: 135.99385829571756
+linear_regression - Iteration 93000
+linear_regression - Iteration 93000, loss: 135.9909423210519
+linear_regression - Iteration 94000, loss: 135.98818470258158
+linear_regression - Iteration 94500
+linear_regression - Iteration 95000, loss: 135.98558544030658
+linear_regression - Iteration 96000
+linear_regression - Iteration 96000, loss: 135.9831445342269
+linear_regression - Iteration 97000, loss: 135.98086198434265
+linear_regression - Iteration 97500
+linear_regression - Iteration 98000, loss: 135.9787377906537
+linear_regression - Iteration 99000
+linear_regression - Iteration 99000, loss: 135.97677195316012
+linear_regression - Iteration 100000, loss: 135.97496447186188
+linear_regression - Iteration 100500
+linear_regression - Iteration 101000, loss: 135.97331534675897
+linear_regression - Iteration 102000
+linear_regression - Iteration 102000, loss: 135.97182457785146
+linear_regression - Iteration 103000, loss: 135.97049216513923
+linear_regression - Iteration 103500
+linear_regression - Iteration 104000, loss: 135.96981169105374
+linear_regression - Iteration 105000
+linear_regression - Iteration 105000, loss: 135.9698116910537
+linear_regression - Converged after 105000 iterations.

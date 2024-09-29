@@ -1,0 +1,4 @@
+part1 - Sklearn MSE: 135.96553310118975
+part1 - My MSE: 135.96981169105374
+part1 - Normal equation without bias MSE: 555.3704507514158
+part1 - Normal equation with bias MSE: 135.96553310118978
