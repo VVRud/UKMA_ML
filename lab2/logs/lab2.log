@@ -1,0 +1,56 @@
+lab2 - Loading data...
+lab2 - Vectorizing images with CLIP...
+lab2 - Vectorizing texts with CLIP...
+lab2 - Hierarchical Clustering with 2 clusters:
+lab2 - 	Cluster 0: 129 samples
+lab2 - 	Cluster 1: 171 samples
+lab2 - KMeans Clustering with 2 clusters:
+lab2 - 	Cluster 0.0: 109 samples
+lab2 - 	Cluster 1.0: 191 samples
+lab2 - --------------------------------------------------
+lab2 - Hierarchical Clustering with 3 clusters:
+lab2 - 	Cluster 0: 171 samples
+lab2 - 	Cluster 1: 87 samples
+lab2 - 	Cluster 2: 42 samples
+lab2 - KMeans Clustering with 3 clusters:
+lab2 - 	Cluster 0.0: 100 samples
+lab2 - 	Cluster 1.0: 113 samples
+lab2 - 	Cluster 2.0: 87 samples
+lab2 - --------------------------------------------------
+lab2 - Hierarchical Clustering with 5 clusters:
+lab2 - 	Cluster 0: 104 samples
+lab2 - 	Cluster 1: 57 samples
+lab2 - 	Cluster 2: 42 samples
+lab2 - 	Cluster 3: 67 samples
+lab2 - 	Cluster 4: 30 samples
+lab2 - KMeans Clustering with 5 clusters:
+lab2 - 	Cluster 0.0: 53 samples
+lab2 - 	Cluster 1.0: 70 samples
+lab2 - 	Cluster 2.0: 50 samples
+lab2 - 	Cluster 3.0: 68 samples
+lab2 - 	Cluster 4.0: 59 samples
+lab2 - --------------------------------------------------
+lab2 - Hierarchical Clustering with 6 clusters:
+lab2 - 	Cluster 0: 57 samples
+lab2 - 	Cluster 1: 53 samples
+lab2 - 	Cluster 2: 42 samples
+lab2 - 	Cluster 3: 67 samples
+lab2 - 	Cluster 4: 30 samples
+lab2 - 	Cluster 5: 51 samples
+lab2 - KMeans Clustering with 6 clusters:
+lab2 - 	Cluster 0.0: 56 samples
+lab2 - 	Cluster 1.0: 59 samples
+lab2 - 	Cluster 2.0: 41 samples
+lab2 - 	Cluster 3.0: 43 samples
+lab2 - 	Cluster 4.0: 53 samples
+lab2 - 	Cluster 5.0: 48 samples
+lab2 - --------------------------------------------------
+lab2 - DBSCAN Clustering:
+lab2 - 	Cluster -1: 32 samples
+lab2 - 	Cluster 0: 268 samples
+lab2 - Original data:
+lab2 - 	Accuracy: 0.90
+lab2 - 	F1: 0.87
+lab2 - Filtered data:
+lab2 - 	Accuracy: 0.93
+lab2 - 	F1: 0.90

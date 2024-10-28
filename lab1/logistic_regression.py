@@ -1,6 +1,6 @@
 import numpy as np
 
-from linear_regression import MyLinearRegression
+from lab1.linear_regression import MyLinearRegression
 
 
 class MyLogisticRegression(MyLinearRegression):

@@ -10,43 +10,18 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 
-from logger import get_logger
-from models import create_model
-from predictors import voting_predictor
-from validators import create_validator
-from vectorization import vectorize_images
+from lab1.data_manipulation import load_data, validation_split
+from lab1.logger import get_logger
+from lab1.models import create_model
+from lab1.predictors import voting_predictor
+from lab1.validators import create_validator
+from lab1.vectorization import vectorize_images
 
 
 base_path = Path('logs') / 'part2'
 imgs_dir = base_path / 'imgs'
 imgs_dir.mkdir(parents=True, exist_ok=True)
 logger = get_logger("part2", base_path)
-
-
-def load_data(image_folder: str, label_file: str):
-    ''' Loads images and labels from the specified folder and file.'''
-    # load labels file
-    logger.debug("Loading data...")
-    labels = pd.read_csv(label_file, delimiter="|", usecols=["image_name", "label"])
-    labels["label"] = (labels["label"] == "animal").astype(np.int32)
-    labels = labels.sort_values(by="image_name").reset_index(drop=True)
-    image_names = labels["image_name"].tolist()
-    labels = labels["label"].to_numpy()
-
-    # load corresponding images
-    images = []
-    for image_name in image_names:
-        image_file = Image.open(os.path.join(image_folder, image_name))
-        if image_file.mode != "RGB":
-            image_file = image_file.convert("RGB")
-        images.append(image_file)
-
-    return images, labels
-
-
-def validation_split(X: np.ndarray, y: np.ndarray, test_size: float):
-    ''' Splits data into train and test.'''
-    return train_test_split(X, y, np.arange(X.shape[0]), test_size=test_size)
 
 
 def print_metrics(y_true, y_pred):
@@ -66,15 +41,15 @@ def print_metrics(y_true, y_pred):
 @click.option("--voting_method", type=str, help="Method of the voting to use")
 @click.option("--test_size", type=float, default=0.2, help="Size of the test split")
 def main(image_folder: str, label_file: str, embeddings_type: str, model_name: str, validator_name:str, voting_method: str, test_size: float):
-    image_folder = "dataset/images"
-    label_file = "dataset/labels.csv"
+    image_folder = "../dataset/images"
+    label_file = "../dataset/labels.csv"
     embeddings_type = "google/vit-base-patch16-224"
     model_name = "logistic_regression_sklearn"
     validator_name = "stratified_k_fold"
     voting_method = "soft"
     test_size = 0.2
 
-    images, labels = load_data(image_folder, label_file)
+    images, labels, _, _ = load_data(logger, image_folder, label_file)
 
     X = vectorize_images(logger, images, embeddings_type)
     y = labels

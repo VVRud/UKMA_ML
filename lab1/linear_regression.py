@@ -2,7 +2,7 @@ from pathlib import Path
 
 import numpy as np
 
-from logger import get_logger
+from lab1.logger import get_logger
 
 
 class MyLinearRegression:

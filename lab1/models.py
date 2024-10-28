@@ -2,7 +2,7 @@ from pathlib import Path
 
 from sklearn.linear_model import LogisticRegression
 
-from logistic_regression import MyLogisticRegression
+from lab1.logistic_regression import MyLogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 
