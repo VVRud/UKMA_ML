@@ -6,3 +6,5 @@ pandas==2.2.3
 pillow==10.4.0
 transformers[torch]==4.45.1
 plotly
+torch
+timm

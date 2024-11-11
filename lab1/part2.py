@@ -3,10 +3,7 @@ from pathlib import Path
 
 import click
 import numpy as np
-import pandas as pd
-from PIL import Image
 from sklearn.metrics import accuracy_score, f1_score
-from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 
